@@ -19,3 +19,11 @@ for word in tokenized_words:
         final_words.append(word)
     
 print(final_words)
+
+
+
+with open ('emotions.txt', 'r') as file:
+    for line in file:
+        clear_line = line.replace('\n','').replace(',','').replace("'",'').strip()
+        word, emotion = clear_line.split(':')
+        
