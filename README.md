@@ -1,24 +1,57 @@
-# Sentiment-Analysis-ML-Flask-App
-A machine learning end to end flask web app for sentiment analysis model created using Scikit-learn &amp; VADER Sentiment. <br />
-The project uses libraries like : <br />
-Flask <br />
-Sklearn <br />
-Requests <br />
-NLTK <br />
-RE <br />
-vaderSentiment <br />
+# Sentiment-Analysis-ML-Flask-App-Created-by-group6
 
-### VADER SENTIMENT <br />
-VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media, and works well on texts from other domains. <br />
-More about [VADER](https://pypi.org/project/vaderSentiment/)
-<br />
-<br />
-### LET'S TALK ABOUT SENTIMENT ANALYSIS <br />
-Sentiment analysis, an important area in Natural Language Processing, is the process of automatically detecting affective states of text. Sentiment analysis is widely applied to voice-of-customer materials such as product reviews in online shopping websites like Amazon, movie reviews or social media. It can be just a basic task of classifying the polarity of a text as being positive/negative or it can go beyond polarity, looking at sentiment states etc. <br />
-Sentiment analysis refers to analyzing an opinion or feelings about something using data like text or images, regarding almost anything. Sentiment analysis helps companies in their decision-making process. For instance, if public sentiment towards a product is not so good, a company may try to modify the product or stop the production altogether in order to avoid any losses. <br />
+A machine learning end-to-end Flask web app for sentiment analysis, created using Scikit-learn & VADER Sentiment. This application processes text inputs to determine sentiment scores, illustrating how natural language processing can be applied to extract meaningful insights from text data.
 
-There are many sources of public sentiment e.g. public interviews, opinion polls, surveys, etc. However, with more and more people joining social media platforms, websites like Facebook and Twitter can be parsed for public sentiment. <br />
-<br />
-The output looks like : <br />
-![](sentiment.gif)
+## Project Dependencies
 
+This project uses the following libraries:
+
+- **Flask**: A lightweight WSGI web application framework.
+- **Sklearn**: A machine learning library for Python.
+- **Requests**: A library for making HTTP requests in Python.
+- **NLTK**: A leading platform for building Python programs to work with human language data.
+- **RE**: Python's built-in library for regular expressions.
+- **vaderSentiment**: A lexicon and rule-based sentiment analysis tool that is particularly good at handling social media text and similarly constructed data.
+
+## VADER Sentiment Analysis
+
+VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media, and works well on texts from other domains.
+
+Learn more about VADER: [VADER on PyPI](https://pypi.org/project/vaderSentiment/)
+
+## About Sentiment Analysis
+
+Sentiment analysis is a critical area of Natural Language Processing that involves analyzing opinions or feelings expressed in textual data. Widely applied to customer feedback like product reviews, sentiment analysis helps businesses understand public sentiment which can influence decision making.
+
+Use cases extend across analyzing sentiments on:
+
+- Product reviews on e-commerce platforms.
+- Public opinions on social media platforms.
+- Feedback on movie and product services.
+
+## Application Overview
+
+The application provides a web interface where users can input text. The text is then processed to remove noise such as punctuation and stopwords. Using the VADER Sentiment tool, the application analyzes the text to determine its sentiment. The sentiment scores are displayed in the web interface, providing insights into the overall sentiment and specific emotional scores like positivity, negativity, and neutrality.
+
+## Screenshot
+
+Here's what the output looks like:
+![Sentiment Analysis Result](sentiment.gif)
+
+## Running the Application
+
+To run the application locally, ensure you have Python installed, then follow these steps:
+
+1. Clone the repository:
+   git clone https://github.com/yourusername/Sentiment-Analysis-ML-Flask-App.git
+
+2. Navigate to the cloned directory:
+   cd Sentiment-Analysis-ML-Flask-App
+
+3. Install the required dependencies:
+   pip install -r requirements.txt
+
+4. Start the Flask server:
+   python app.py
+
+5. Open a web browser and go to `http://127.0.0.1:5002` to use the application.
